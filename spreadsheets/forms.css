@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+/* #264653, #2A9D8F, #E9C46A, #F4A261, #E76F51 */
+
+*{
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    --primary:#1a1919;
+    --secondary:#e5e5e5;
+    --runner-up-1:rgb(93, 146, 214);
+    --runner-up-2:#0077b6ff;
+    --runner-up-3:#272424;
+}
+
+::-webkit-input-placeholder {
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+::-ms-reveal {
+    filter: invert(100%);
+}
+
+.login{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.register{
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.login #heading-login, .register #heading-register{
+    margin-top: 30px;
+    color: var(--secondary);
+    font-weight: bolder;
+}
+
+form{
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    border: 3px solid var(--runner-up-3);
+    background-color: var(--runner-up-3);
+    border-radius: 10px;
+}
+
+
+form input{
+    margin-top: 20px;
+
+    width: 200px;
+
+    outline: none;
+    
+    border: none;
+    /* border-top: 8px solid #E76F51;
+    border-left: 8px solid #E76F51; */
+    border-radius: 8px;
+    
+    background-color: var(--primary);
+    
+    box-shadow: 0 7px 7px rgb(0 0 0 / 20%);
+    
+    padding: 15px;
+    padding-top: 10px;
+    font-size: 17px;
+    
+    color: var(--secondary);
+    font-weight: bold;
+
+    transition: all .3s;
+    
+}
+
+form button{
+    cursor:pointer;
+    margin-top: 22px;
+
+    outline: none;
+    
+    border: none;
+    border-radius: 8px;
+    
+    background-color: #201e1e;
+    
+    box-shadow: inset 0 0 0 0 rgb(0 0 0 / 20%);
+
+    padding: 10px 30px;
+    font-size: 17px;
+    
+    color: var(--secondary);
+    font-weight: bold;
+    
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+form button:hover{
+    transform: scale(1.1);
+    /* box-shadow: inset 400px 0 0 0  var(--runner-up-3); */
+}
+
+#fpassword{
+    font-size: 18px;
+    color: var(--secondary);
+    text-decoration: none;
+}

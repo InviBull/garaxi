@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+:root{
+    --primary:#1a1919;
+    --secondary:#e5e5e5;
+    --runner-up-1:rgb(93, 146, 214);
+    --runner-up-2:#0077b6ff;
+    --runner-up-3:#272424;
+}
+
+body{
+    background-color: var(--primary);
+    margin: 0;
+}
+
+::-webkit-input-placeholder {
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--runner-up-3);
+}
+
+.navbar .links{
+    margin-left: 80px;
+    right: 0;
+}
+
+.navbar #title-header{
+    margin-right: 20px;
+}
+
+.navbar .links ul{
+    display: flex;
+}
+
+.navbar .links ul li{
+    list-style-type: none;
+}
+
+.navbar #title-header, .links ul li a{
+    color: var(--secondary);
+    
+    text-align: center;
+    text-decoration: none;
+
+    padding: 12px 16px;
+    
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Inter', sans-serif;
+
+    display: flex;
+}
+
+.navbar input[type=search] {
+    padding: 6px;
+    
+    margin-top: 1px;
+    
+    font-size: 17px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    
+    border: none;
+    border-bottom: 2px solid var(--runner-up-2);
+
+    width: 500px;
+    
+    outline: none;
+
+    color: var(--secondary);
+    background: var(--runner-up-3);
+}
+
+.navbar button {
+    padding: 6px 10px;
+
+    background: var(--runner-up-3);
+
+    font-size: 17px;
+
+    border: none;
+    
+    cursor: pointer;
+
+    margin-left: 4px;
+}
+
+.fa-search{
+    color: #0077b6ff;
+}
+
+.fa-close{
+    color: var(--runner-up-2);
+}
+
+.fa-bars{
+    color: var(--runner-up-2);
+}
+
+@media only screen and (max-width:800px){
+    .navbar .links ul{
+        flex-direction :column;
+    }
+
+    .navbar .links{
+        margin-top: 30px;
+    }
+    
+    .navbar .links ul li a{
+        display: block;
+    }    
+    
+    .navbar .links ul li{
+        margin: 0;
+    }    
+
+    .navbar .links button{
+        display: block;
+
+        border: none;
+        outline: none;
+        cursor: pointer;
+        
+        align-self: flex-end;
+    }
+}
+@media only screen and (min-width:800px){
+    .navbar .links button{
+        display: none;
+    }
+    .navbar .links ul{
+        flex-direction :row;
+    }
+    
+    .navbar .links ul li a{
+        display: flex !important;
+    }    
+}

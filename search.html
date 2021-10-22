@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Search Results">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="./spreadsheets/searchresult.css">
+    <link rel="stylesheet" href="./spreadsheets/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="navbar" id = "navbar">
+        <a class="active" href="index.html" id = "title-header">Garaxi</a>
+        <input id = "searchbar" type="search" placeholder="Search your car..." onkeyup="filterSearchOptions()" onclick="commonSearch()">
+        <button type="submit" onclick="redir()" id = "searchbarButton" aria-label="Search Bar Icon"><i aria-hidden = "true" class = "fa fa-search"></i></button>
+        <div class = "links">
+            <button class ="bar" id = "barButton" aria-label="Bar Close/Open"><i  id = "icon" class = "fa fa-close" aria-hidden="true"></i></button>
+            <ul class = "list">
+                <li><a class="link" href="index.html">About</a></li>
+                <li><a class="link" href="login.html">Login</a></li>
+                <li><a class="link" href="register.html">Register</a></li>
+            </ul>
+            <script src="./scripts/header.js"></script>
+        </div>
+        
+        <ul id = "listOptions">
+
+        </ul>
+
+        <script src="./scripts/search.js"></script>
+        <script src="./scripts/fetch_data.js"></script>
+    </div>
+    <div class = "no-results">
+        <img id = "noResultsIMG" src="./imgs/no-results.jpeg" style = "display: none;"alt="No Results Found">
+        <p id = "noResults" style = "display: none;">We searched far and wide, but could not find results matching your query.</p>
+    </div>
+    <div class = "previews" id = "previews">
+        <div class = "preview-card-default" id = "preview-card-default" style="margin-top: 50px; margin-bottom: 50px; display : none;background-color: #272424;">
+            <div class = "content">
+                <p id = "make" class = "features-">Make: </p>
+                <p id = "model" class = "features-">Model: </p>
+                <p id = "year" class = "features-">Year: </p>
+                <p id = "eft" class = "features-">Engine Fuel Type: </p>
+                <p id = "ehp" class = "features-">Engine HP: </p>
+                <p id = "ec" class = "features-">Engine Cylinders: </p>
+                <p id = "tt" class = "features-">Transmission type: </p>
+                <p id = "nwheels" class = "features-">Driven Wheels: </p>
+                <p id = "ndoors" class = "features-">Number of doors: </p>
+                <p id = "mc" class = "features-">Market Cateogry: </p>
+                <p id = "vsize" class = "features-">Vehicle Size: </p>
+                <p id = "vstyle" class = "features-">Vehicle Style: </p>
+                <p id = "hmpg" class = "features-">Highway MPG: </p>
+                <p id = "cmpg" class = "features-">City MPG: </p>
+                <p id = "popularity" class = "features-">Popularity: </p>
+                <p id = "msrp" class = "features-">MSRP: </p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

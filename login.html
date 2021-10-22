@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login into this amazing galaxy of cars">
+    <title>Garaxi | Login</title>
+    <link rel="stylesheet" href="./spreadsheets/header.css">
+    <link rel="stylesheet" href="./spreadsheets/forms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navbar" id = "navbar">
+        <a class="active" href="index.html" id = "title-header">Garaxi</a>
+        <input id = "searchbar" type="search" placeholder="Search your car..." onkeyup="filterSearchOptions()" onclick="commonSearch()">
+        <button type="submit" onclick="redir()" id = "searchbarButton" aria-label="Search Bar Icon"><i aria-hidden = "true" class = "fa fa-search"></i></button>
+        <div class = "links">
+            <button class ="bar" id = "barButton" aria-label="Bar Close/Open"><i  id = "icon" class = "fa fa-close" aria-hidden="true"></i></button>
+            <ul class = "list">
+                <li><a class="link" href="index.html">About</a></li>
+                <li><a class="link" href="login.html">Login</a></li>
+                <li><a class="link" href="register.html">Register</a></li>
+            </ul>
+            <script src="./scripts/header.js"></script>
+        </div>
+        
+        <ul id = "listOptions">
+
+        </ul>
+
+        <script src="./scripts/search.js"></script>
+
+    </div>
+
+    <div id="login" class="login">
+        <h1 id = "heading-login">Login</h1>
+
+        <form>
+            <input type="text" placeholder="Username..." name="uname" required>
+            <br>
+            <input type="password" placeholder="Password..." name="password" required>
+            <br>
+            <button type="submit">Login</button>
+            <p><a href="#" id = "fpassword">Forgot password?</a></p>
+        </form>
+    </div>
+    
+    <script src="./scripts/forms.js"></script>
+</body>
+</html>
